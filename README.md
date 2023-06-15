@@ -15,11 +15,15 @@ Bu proje, Flutter kullanarak oluşturulmuş basit bir landing page (ziyaretçile
 2. Proje klasörünü Flutter geliştirme ortamınızda açın.
 3. Bağımlılıkları yüklemek için terminalde veya komut satırında `flutter pub get` komutunu çalıştırın.
 4. Projeyi çalıştırmak için `flutter run` komutunu kullanın.
+5. Projeyi build almak için `flutter build web` komutunu kullanın.
+   
 
 ## Kullanım
 
 1. `Utils` klasöründe bulunan `text_utils.dart` dosyasını açın.
-2. Dosyada bulunan metinleri, landing page'inizin içeriğine uygun şekilde düzenleyin. İşte bazı örnek metinler:
+2. Tab name değiştirmek için `main.dart` dosyasından proje ismini değiştirebilirsiniz.
+3. Favicon'u `web` klasöründe `index.html` içinden değiştirebilirsiniz.
+4. Dosyada bulunan metinleri, landing page'inizin içeriğine uygun şekilde düzenleyin. İşte bazı örnek metinler:
 
    ```dart
    //* Name
