@@ -18,7 +18,7 @@ Bu proje, Flutter kullanarak oluşturulmuş basit bir landing page (ziyaretçile
 
 ## Kullanım
 
-1. `lib` klasöründe bulunan `text_utils.dart` dosyasını açın.
+1. `Utils` klasöründe bulunan `text_utils.dart` dosyasını açın.
 2. Dosyada bulunan metinleri, landing page'inizin içeriğine uygun şekilde düzenleyin. İşte bazı örnek metinler:
 
    ```dart
@@ -38,7 +38,8 @@ Bu proje, Flutter kullanarak oluşturulmuş basit bir landing page (ziyaretçile
    String message = 'https://wa.me/1234567890';
    //* Avatar
    String circleAvatar = "assets/youravatar.png";
-Bileşenlerin tasarımını ve düzenini lib klasöründeki diğer dosyalardan özelleştirerek landing page'inizi istediğiniz gibi şekillendirin.
+Bileşenlerin tasarımını ve düzenini Utils klasöründeki diğer dosyalardan özelleştirerek landing page'inizi istediğiniz gibi şekillendirin.
+---
 Katkılar
 Katkılarınızı memnuniyetle karşılıyoruz! Eğer bu projeye katkıda bulunmak isterseniz, aşağıdaki adımları takip edebilirsiniz:
 
@@ -47,5 +48,7 @@ Yeni bir dal (branch) oluşturun: git checkout -b my-new-feature.
 Yaptığınız değişiklikleri commit edin: git commit -am 'Add some feature'.
 Dalınızı ana repositoriumuza push edin: git push origin my-new-feature.
 Pull request oluşturun.
+
+---
 Lisans
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyebilirsiniz.
