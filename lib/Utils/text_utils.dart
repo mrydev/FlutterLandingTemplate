@@ -3,12 +3,13 @@
 //! If you want to add extra buttons, you can use MyButton and MyMobileButton classes.
 //?--------------------------------------------------------------------------------------
 
-
 class TextUtils {
+  //* Title
+  String title = "@mrydev";
   //* Name
-  String name = "Emre";
+  String name = "Emre Yavuz";
   //* Job
-  String job = "Flutter / Student";
+  String job = "Flutter Dev / Architecture Student";
   //* Githun Acc
   String github = 'https://github.com/mrydev';
   //* Instagram

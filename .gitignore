@@ -108,8 +108,7 @@ DerivedData/
 **/test/DriverTest.dart
 **/test/test_config.dart
 **/test/widget_test.dart
-/lib/main.dart
-/lib/generated_plugin_registrant.dart
+**/test/app_test.dart
 
 # Firebase yapılandırma dosyaları
 android/app/google-services.json

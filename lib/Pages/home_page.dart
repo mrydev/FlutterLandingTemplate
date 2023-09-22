@@ -16,23 +16,33 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     double deviceWidth = MediaQuery.of(context).size.width;
     if (deviceWidth < 900) {
+      //?--------------------------------------------------------------------------------------
+      //?--------------------------------------------------------------------------------------
+
       //* Genişliği 900 pikselden küçük olan cihazlar için tasarım
+      //?--------------------------------------------------------------------------------------
+      //! Burada sadece stringleri değiştirmeniz yeterli.
+      //! Eğer ekstra buton eklemek isterseniz MyButton ve MyMobileButton sınıflarını kullanabilirsiniz.
+
+      //?--------------------------------------------------------------------------------------
+      //?--------------------------------------------------------------------------------------
+
       return Scaffold(
         body: SingleChildScrollView(
           child: Center(
               child: Padding(
             padding: const EdgeInsets.all(32),
             child: Column(children: [
-              const CircleAvatar(
-                backgroundImage: AssetImage('assets/mrydev.png'),
+              CircleAvatar(
+                backgroundImage: AssetImage(TextUtils().circleAvatar),
                 radius: 64,
               ),
               const SizedBox(
                 height: 16,
               ),
-              const Text(
-                'Emre',
-                style: TextStyle(
+              Text(
+                TextUtils().name,
+                style: const TextStyle(
                   color: Color(0xff536163),
                   fontSize: 32,
                   fontWeight: FontWeight.w800,
@@ -41,9 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 16,
               ),
-              const Text(
-                'Flutter Dev / Student',
-                style: TextStyle(
+              Text(
+                TextUtils().job,
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w300,
                 ),
@@ -54,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyMobileButton(
                   onTap: () async {
                     // Get the URL from the button
-                    String url = 'https://github.com/mrydev';
+                    String url = TextUtils().github;
 
                     // Check if the URL can be launched
                     if (await canLaunchUrl(Uri.parse(url))) {
@@ -70,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyMobileButton(
                   onTap: () async {
                     // Get the URL from the button
-                    String url = 'https://instagram.com/emreyvz_';
+                    String url = TextUtils().instagram;
 
                     // Check if the URL can be launched
                     if (await canLaunchUrl(Uri.parse(url))) {
@@ -86,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyMobileButton(
                   onTap: () async {
                     // Get the email address from the button
-                    String email = 'khapnols@proton.me';
+                    String email = TextUtils().email;
 
                     // Check if the email can be launched
                     if (await canLaunchUrl(Uri.parse('mailto:$email'))) {
@@ -102,8 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyMobileButton(
                   onTap: () async {
                     // Get the URL from the button
-                    String url =
-                        'https://open.spotify.com/user/31dbqjq4jcr63vlwjnpgvemh2rb4?si=a619c4d6bc7f4fd5';
+                    String url = TextUtils().spotify;
 
                     // Check if the URL can be launched
                     if (await canLaunchUrl(Uri.parse(url))) {
@@ -119,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
               MyMobileButton(
                   onTap: () async {
                     // Get the URL from the button
-                    String url = 'https://wa.me/905302494535';
+                    String url = TextUtils().message;
 
                     // Check if the URL can be launched
                     if (await canLaunchUrl(Uri.parse(url))) {
@@ -137,7 +146,17 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       );
     } else {
+      //?--------------------------------------------------------------------------------------
+      //?--------------------------------------------------------------------------------------
+
       //* Genişliği 900 piksek ve daha büyük olan cihazlar için tasarım
+      //?--------------------------------------------------------------------------------------
+      //! Burada sadece stringleri değiştirmeniz yeterli.
+      //! Eğer ekstra buton eklemek isterseniz MyButton ve MyMobileButton sınıflarını kullanabilirsiniz.
+
+      //?--------------------------------------------------------------------------------------
+      //?--------------------------------------------------------------------------------------
+
       return Scaffold(
           backgroundColor: (const Color(0xffE8E8E8)),
           body: SingleChildScrollView(
