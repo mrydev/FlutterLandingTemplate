@@ -22,5 +22,5 @@ class TextUtils {
   //* Message
   String message = 'https://wa.me/905302494535';
   //* Avatar
-  String circleAvatar = "assets/mrydev.png";
+  String circleAvatar = "https://imgur.com/a/gzfHVrP";
 }

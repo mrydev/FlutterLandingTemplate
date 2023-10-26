@@ -158,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //?--------------------------------------------------------------------------------------
 
       return Scaffold(
-          backgroundColor: (const Color(0xffE8E8E8)),
+          backgroundColor: (const Color(0xfffbf7f4)),
           body: SingleChildScrollView(
             child: Center(
                 child: Padding(
@@ -180,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               children: [
                                 CircleAvatar(
                                   backgroundImage:
-                                      AssetImage(TextUtils().circleAvatar),
+                                      NetworkImage(TextUtils().circleAvatar),
                                   radius:
                                       MediaQuery.of(context).size.width * 0.07,
                                 ),
@@ -190,7 +190,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Text(
                                   TextUtils().name,
                                   style: const TextStyle(
-                                    color: Color(0xff536163),
+                                    color: Color(0xffA1683A),
                                     fontSize: 64,
                                     fontWeight: FontWeight.w800,
                                   ),
@@ -231,7 +231,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                           throw 'Could not launch $url';
                                         }
                                       },
-                                      icon: const Icon(FontAwesome.github),
+                                      icon: const Icon(
+                                        FontAwesome.github,
+                                        color: Color(0xffE8F5F7),
+                                      ),
                                       text: 'Github'),
                                   MyButton(
                                       onTap: () async {
@@ -248,7 +251,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                           throw 'Could not launch $url';
                                         }
                                       },
-                                      icon: const Icon(FontAwesome.instagram),
+                                      icon: const Icon(
+                                        FontAwesome.instagram,
+                                        color: Color(0xffE8F5F7),
+                                      ),
                                       text: 'Instagram'),
                                   MyButton(
                                       onTap: () async {
@@ -266,7 +272,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                           throw 'Could not launch email to $email';
                                         }
                                       },
-                                      icon: const Icon(FontAwesome.envelope),
+                                      icon: const Icon(
+                                        FontAwesome.envelope,
+                                        color: Color(0xffE8F5F7),
+                                      ),
                                       text: 'Email'),
                                   MyButton(
                                       onTap: () async {
@@ -282,25 +291,31 @@ class _MyHomePageState extends State<MyHomePage> {
                                           throw 'Could not launch $url';
                                         }
                                       },
-                                      icon: const Icon(FontAwesome.spotify),
+                                      icon: const Icon(
+                                        FontAwesome.spotify,
+                                        color: Color(0xffE8F5F7),
+                                      ),
                                       text: 'Spotify'),
-                                  MyButton(
-                                      onTap: () async {
-                                        // Get the URL from the button
-                                        String url = TextUtils().message;
+                                  // MyButton(
+                                  //     onTap: () async {
+                                  //       // Get the URL from the button
+                                  //       String url = TextUtils().message;
 
-                                        // Check if the URL can be launched
-                                        if (await canLaunchUrl(
-                                            Uri.parse(url))) {
-                                          // Launch the URL
-                                          await launchUrl(Uri.parse(url));
-                                        } else {
-                                          // Throw an error if the URL cannot be launched
-                                          throw 'Could not launch $url';
-                                        }
-                                      },
-                                      icon: const Icon(FontAwesome.whatsapp),
-                                      text: 'Message!'),
+                                  //       // Check if the URL can be launched
+                                  //       if (await canLaunchUrl(
+                                  //           Uri.parse(url))) {
+                                  //         // Launch the URL
+                                  //         await launchUrl(Uri.parse(url));
+                                  //       } else {
+                                  //         // Throw an error if the URL cannot be launched
+                                  //         throw 'Could not launch $url';
+                                  //       }
+                                  //     },
+                                  //     icon: const Icon(
+                                  //       FontAwesome.whatsapp,
+                                  //       color: Color(0xffE8F5F7),
+                                  //     ),
+                                  //     text: 'Message!'),
                                 ]),
                           ],
                         )))),

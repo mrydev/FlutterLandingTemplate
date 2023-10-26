@@ -21,7 +21,7 @@ class MyButton extends StatelessWidget {
           height: 64,
           width: screenSize.width * 0.25,
           decoration: BoxDecoration(
-            color: const Color(0xffE8F5F7),
+            color: const Color(0xffA1683A),
             borderRadius: BorderRadius.circular(32),
           ),
           child: Center(
@@ -34,7 +34,7 @@ class MyButton extends StatelessWidget {
                       style: GoogleFonts.inter(
                         fontSize: 20,
                         fontWeight: FontWeight.w400,
-                        color: const Color(0xff536163),
+                        color: const Color(0xffE8F5F7),
                       )),
                   icon,
                 ],
