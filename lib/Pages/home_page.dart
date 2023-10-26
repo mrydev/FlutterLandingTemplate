@@ -180,7 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               children: [
                                 CircleAvatar(
                                   backgroundImage:
-                                      NetworkImage(TextUtils().circleAvatar),
+                                      AssetImage(TextUtils().circleAvatar),
                                   radius:
                                       MediaQuery.of(context).size.width * 0.07,
                                 ),
