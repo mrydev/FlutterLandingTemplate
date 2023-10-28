@@ -22,5 +22,6 @@ class TextUtils {
   //* Message
   String message = 'https://wa.me/905302494535';
   //* Avatar
-  String circleAvatar = "assets\\mrydev.png";
+  String circleAvatar =
+      "C:\\Users\\khapn\\FlutterLandingTemplate\\assets\\dc244fc2f462fd07509683542c1b716a.jpg";
 }
