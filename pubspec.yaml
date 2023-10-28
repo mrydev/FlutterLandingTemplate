@@ -67,6 +67,7 @@ flutter:
 
   assets:
     - assets/
+    - assets/1200px-Girl_with_a_Pearl_Earring.jpg
      
 
   # An image asset can refer to one or more resolution-specific "variants", see
